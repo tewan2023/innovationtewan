@@ -1,61 +1,137 @@
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gomah/bluise)
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
 
-# Bluise - A Nuxt.js & Netlify CMS boilerplate.
+    <title>CSI MOUGNOU SA MIFEH</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sonsie+One"
+      rel="stylesheet"
+      type="text/css" />
+    <link rel="stylesheet" href="style.css" />
 
-I wanted to explore Netlify CMS & Tailwind CSS, ended up creating this boilerplate.
 
-So far we've got:
+  <!-- Les trois lignes ci‑dessous sont un correctif pour que la sémantique
+          HTML5 fonctionne correctement avec les anciennes versions de
+          Internet Explorer-->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+  </head>
 
-- Blog w/ posts, including pagination.
-- Configurable manifest & global settings.
-- CSS Markdown (Thanks to [https://github.com/iandinwoodie/github-markdown-tailwindcss/blob/master/markdown.css]).
-- Dynamic pages.
-- PWA ready.
-- SEO ready for posts & pages.
-- Signup form (using Netlify Forms).
-- Tools (Commitlint, Husky).
-- Typescript.
+  <body>
+    <!-- Voici notre en‑tête principale utilisée dans toutes les pages
+          de notre site web -->
+    <header>
+      <h1>MINISTÈRE DES ENSEIGNEMENTS PRIMAIRES SECONDAIRES TECHNIQUES</h1>
+    </header>
 
-Few things I'd like to add in the future:
+    <nav>
+      <ul>
+        <li><a href="#">Accueil</a></li>
+        <li><a href="#">L'équipe</a></li>
+        <li><a href="#">Projets</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
 
-- Contact form under \_slug.
-- Dynamic sections/widgets.
-- Responsive CSS markdown.
-- Tests
+      <!-- Un formulaire de recherche est une autre façon de naviguer de
+            façon non‑linéaire dans un site. -->
 
-## Quickstart
+      <form>
+        <input type="recherche" name="q" placeholder="Rechercher" />
+        <input type="submit" value="Lancer !" />
+      </form>
+    </nav>
+      <div class="panier">
+  <h2>Panier d'achat</h2>
+  <ul>
+    <li>
+      <p>
+        <a href=""><b>Boucles d'oreilles en argent</b></a
+        >: €99,95.
+      </p>
+      <img
+        src="../products/3333-0985/thumb.png"
+        alt="Boucles d'oreilles en argent" />
+    </li>
+    <li>...</li>
+  </ul>
+  <p>Total des achats&nbsp;: €237,89</p>
+</div>
 
-### Prerequisites
 
-- [Yarn](https://yarnpkg.com/lang/en/docs/install/#mac-tab)
-- [Node.js](https://nodejs.org/en/)
+    <!-- Ici nous mettons le contenu de la page -->
+    <main>
+      <!-- Il contient un article -->
+      <article>
+        <h2>En-tête d'article</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Donec a diam
+          lectus. Set sit amet ipsum mauris. Maecenas congue ligula as quam
+          viverra nec consectetur ant hendrerit. Donec et mollis dolor. Praesent
+          et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt
+          congue enim, ut porta lorem lacinia consectetur.
+        </p>
 
-```bash
-# ensure you have the prerequisites
-# install
-brew install node && brew install yarn
+        <h3>Sous‑section</h3>
+        <p>
+          Donec ut librero sed accu vehicula ultricies a non tortor. Lorem ipsum
+          dolor sit amet, consectetur adipisicing elit. Aenean ut gravida lorem.
+          Ut turpis felis, pulvinar a semper sed, adipiscing id dolor.
+        </p>
+        <p>
+          Pelientesque auctor nisi id magna consequat sagittis. Curabitur
+          dapibus, enim sit amet elit pharetra tincidunt feugiat nist imperdiet.
+          Ut convallis libero in urna ultrices accumsan. Donec sed odio eros.
+        </p>
 
-# OR update
-brew update && brew upgrade && brew install yarn
+        <h3>Autre sous‑section</h3>
+        <p>
+          Donec viverra mi quis quam pulvinar at malesuada arcu rhoncus. Cum
+          soclis natoque penatibus et manis dis parturient montes, nascetur
+          ridiculus mus. In rutrum accumsan ultricies. Mauris vitae nisi at sem
+          facilisis semper ac in est.
+        </p>
+        <p>
+          Vivamus fermentum semper porta. Nunc diam velit, adipscing ut
+          tristique vitae sagittis vel odio. Maecenas convallis ullamcorper
+          ultricied. Curabitur ornare, ligula semper consectetur sagittis, nisi
+          diam iaculis velit, is fringille sem nunc vet mi.
+        </p>
+      </article>
 
-# install dependencies
-yarn install
+      <!-- Le contenu « à côté » peut aussi être intégré dans le contenu
+            principal -->
+      <aside>
+        <h2>En relation</h2>
+        <ul>
+          <li><a href="#">Combien j'aime être près des rivages</a></li>
+          <li><a href="#">Combien j'aime être près de la mer</a></li>
+          <li><a href="#">Bien que dans le nord de l'Angleterre</a></li>
+          <li><a href="#">Il n'arrête jamais de pleuvoir</a></li>
+          <li><a href="#">Eh bien…</a></li>
+        </ul>
+      </aside>
+    </main>
 
-# serve with hot reload at localhost:3000
-yarn dev
+    <!-- Et voici notre pied de page utilisé sur toutes les pages du site -->
+    <footer>
+      <p>©TEWAN Copyright 2050 . Tous droits reversés.</p>
+    </footer>
+  </body>
+</html>
+<p>
+  Le Roi retourna ivre à sa chambre à une heure, la bière ne l'aidant en rien
+  alors qu'il titubait en travers de la porte
+  <span class="editor-note">
+    [Note du rédacteur : Pour cette scène, la lumière doit être faible].</span
+  >
+</p>
+<p>
+  Le Roi retourna ivre à sa chambre à une heure, la bière ne l'aidant en rien
+  alors qu'il titubait en travers de la porte
+  <span class="editor-note">
+    [Note du rédacteur : Pour cette scène, la lumière doit être faible].</span
+  >
+</p>
 
-# build for production with minification
-yarn generate
-
-# run all tests
-yarn test
-```
-
-### Using Netlify CMS
-
-1. Deploy to Netlify.
-2. Enable Identity under Settings.
-3. Configure registration preferences & external providers if needed.
-4. Enable Git Gateway.
-
-_Note: You'll need to specify the Netlify URL when browsing the admin page locally._
